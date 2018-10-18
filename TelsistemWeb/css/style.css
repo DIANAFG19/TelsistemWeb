@@ -1,4 +1,4 @@
-/*--
+/*--iyhnimjok
 Author: W3layouts
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
@@ -85,7 +85,7 @@ input[type="submit"],input[type="reset"],a,.agileinfo_services_grid1_pos,.agilei
 	margin-bottom:0;
 }
 .navbar-default .navbar-brand,.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-    color: #0174DF;
+    color: #FFFFFF;
 }
 .navbar-default .navbar-nav > li > a:hover{
     color: #0174DF;
@@ -634,11 +634,11 @@ p.dolor{
 	padding:6em 0;
 }
 .content-top2{
-   background:#f36523;
+   background:#0174DF;
    padding:2em;
 }
 .content-top2:hover {
-    background:#0174DF;
+    background:#02B7B9;
 	transition: 0.5s all;
     -webkit-transition: 0.5s all;
     -o-transition: 0.5s all;
@@ -718,19 +718,19 @@ p.dolor{
     background: #2f2f2f;
     padding: 4em 4em;
     text-align: center;
-    min-height: 305px;
+    min-height: 326px;
 }
 .footer-left-agileinfo {
     background: #000000;
-    padding: 4em 4em;
-	text-align:center;
-	 min-height: 305px;
+    padding: 0.5em 0.5em;
+	text-align: center;
+	 min-height: 326px;
 }
 .footer-left-w3-agileits {
     background: #2f2f2f;
     padding: 4em 4em;
 	text-align:center;
-	min-height: 305px;
+	min-height: 326px;
 }
 .footer h3 {
     font-size: 26px;
@@ -1362,7 +1362,7 @@ h2.typoh2{
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color:#f36523;
+    color:#0228C3;
 }
 /*-- contact us --*/
 .mail{
@@ -1414,12 +1414,12 @@ h2.typoh2{
 	margin:3em 0 0;
 }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-    color: #F58703;
+    color: #0277FF;
     cursor: default;
     background: none;
     border: none;
     border-bottom-color: transparent;
-    border-bottom: 1px solid #F58703;
+    border-bottom: 1px solid #0277FF;
 }
 .nav-tabs > li > a {
     margin-right: 3px;
@@ -1438,12 +1438,12 @@ h2.typoh2{
 }
 .nav-tabs > li > a:hover {
     border: none;
-	color: #F58703;
+	color: #0277FF;
     border-bottom: 1px solid;
 	background: none;
 }
 .nav > li > a:hover, .nav > li > a:focus {
-    color: #F58703;
+    color: #0277FF;
 }
 .nav-tabs > li:first-child {
     margin-left: 20em;
@@ -1672,7 +1672,7 @@ h2.typoh2{
 ul.place {
   padding: 0;
   margin: 6px 0;
-  background:#f36523;
+  background:#028EC3;
   width: 100%;
 }
 ul.place li {
