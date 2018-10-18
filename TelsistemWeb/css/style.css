@@ -716,7 +716,7 @@ p.dolor{
 /*--choose--*/
 .footer-left-agileits {
     background: #2f2f2f;
-    padding: 4em 4em;
+    padding: 4em 2em;
     text-align: center;
     min-height: 326px;
 }
@@ -724,13 +724,7 @@ p.dolor{
     background: #000000;
     padding: 0.5em 0.5em;
 	text-align: center;
-	 min-height: 326px;
-}
-.footer-left-w3-agileits {
-    background: #2f2f2f;
-    padding: 4em 4em;
-	text-align:center;
-	min-height: 326px;
+	 min-height: 340px;
 }
 .footer h3 {
     font-size: 26px;
@@ -739,27 +733,6 @@ p.dolor{
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 1em;
-}
-.footer-left-w3-agileits input[type="email"] {
-    outline: none;
-    padding: 10px 10px;
-    font-size: 14px;
-    color: #999;
-    width: 82%;
-    background: #fff;
-    border: none;
-    float: left;
-}
-.footer-left-w3-agileits input[type="submit"] {
-    outline: none;
-    width: 18%;
-    color: #fff;
-    border: none;
-    padding: 9px 0;
-    background: url(../images/right-1.png) no-repeat 27px 12px #0174DF;
-}
-.footer-left-w3-agileits input[type="submit"]:hover {
-    background: url(../images/right-1.png) no-repeat 27px 12px #0174DF;
 }
 .footer p {
     font-size: 14px;
@@ -785,121 +758,6 @@ p.dolor{
     color: #fff;
     text-decoration: none;
 }
-/*-- social-icons --*/
-ul.social-icons li {
-    display: inline-block;
-}
-.icon {
-	display: inline-block;
-	vertical-align: top;
-	margin: 0;
-	width: 30px;
-	height: 30px;
-	font-family: FontAwesome;
-	font-size:1em;
-	color:#fff;
-	text-align:center;
-	border-radius: 25px;
-	-webkit-border-radius: 25px;
-	-moz-border-radius: 25px;
-	-o-border-radius: 25px;
-	-ms-border-radius: 25px;
-}
-.icon-border {
-	position: relative;
-}
-
-.icon-border::before,
-.icon-border::after {
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	content: "";
-	border-radius: 25px;
-	-webkit-border-radius: 25px;
-	-moz-border-radius: 25px;
-	-o-border-radius: 25px;
-	-ms-border-radius: 25px;
-	line-height: 2.2em;
-}
-
-.icon-border::before {
-	z-index: 1;
-	-webkit-transition: box-shadow 0.3s;
-     transition: box-shadow 0.3s;
-}
-
-.icon-border::after {
-	z-index: 2;
-}
-
-/* facebook */
-.icon-border.facebook::before {
-	box-shadow:inset 0 0 0 48px #4a4750;
-}
-
-.icon-border.facebook:hover::before {
-	box-shadow:inset 0 0 0 2px #3b5998;
-}
-
-.icon-border.facebook::after {
-	content:"\f09a";
-}
-.icon-border.facebook:hover::after {
-	color:#3b5998;
-}
-
-/* twitter */
-.icon-border.twitter::before {
-	box-shadow:inset 0 0 0 48px #4a4750;
-}
-
-.icon-border.twitter:hover::before {
-	box-shadow:inset 0 0 0 2px #1da1f2;
-}
-
-.icon-border.twitter::after {
-	content:"\f099";
-}
-.icon-border.twitter:hover::after {
-	color:#1da1f2;
-}
-
-/* instagram */
-.icon-border.instagram::before {
-	box-shadow: inset 0 0 0 48px #4a4750;
-}
-
-.icon-border.instagram:hover::before {
-	box-shadow: inset 0 0 0 2px #833ab4;
-}
-
-.icon-border.instagram::after {
-	content: "\f16d";
-}
-.icon-border.instagram:hover::after {
-	color:#833ab4;
-}
-
-/* pinterest */
-.icon-border.pinterest::before {
-	box-shadow: inset 0 0 0 48px #4a4750;
-}
-
-.icon-border.pinterest:hover::before {
-	box-shadow: inset 0 0 0 2px #bd081c;
-}
-
-.icon-border.pinterest::after {
-	content: "\f231";
-}
-.icon-border.pinterest:hover::after {
-	color:#bd081c;
-}
-/*-- //social-icons --*/
 .copyright-w3-agile {
     padding: 2em 0;
     background: #000;
@@ -1043,6 +901,30 @@ h3.agileits-icons-title {
     display: block;
     text-align: center;
     word-wrap: break-word;
+}
+/*botón up*/
+.boton-subir{
+  display: none;
+  background: #027BB9;
+  border: thin solid #fff;
+  border-radius: 3px;
+  position: fixed;
+  right: 15px;
+  bottom:2px;
+  z-index: 999999999;
+}
+/*evento hover*/
+.boton-subir:hover{
+  box-shadow:   0px 2px 10px 0px rgba(255, 255, 255, 0.75);
+}
+/*estilos para el tag i*/
+.boton-subir i{
+  color: #fff;
+  font-size: 1.5em;
+  padding: 10px 10px 10px 7px;
+  -ms-transform: rotate(-45deg); /* IE 9 */
+  -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+  transform: rotate(-45deg);
 }
 @media (max-width:991px){
 	h3.agileits-icons-title {
@@ -1387,7 +1269,7 @@ h2.typoh2{
     display: block;
     margin-top: 1em;
     outline: none;
-    background: #f36523;
+    background: #013E6E;
     color: #fff;
     border: none;
     width: 34%;

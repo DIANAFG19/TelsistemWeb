@@ -26,6 +26,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //font-awesome-icons -->
 <link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!-- Tus demas hojas de estilos css -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 <!-- banner -->
@@ -71,19 +74,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- mail -->
 	<div class="mail">
 		<div class="container">
-			<h2 class="w3l_head w3l_head1">Contact Us</h2>
+			<h2 class="w3l_head w3l_head1">Contáctanos</h2>
 				<div class="agileits_mail_grids">
 				<div class="agileits_mail_grid_left">
 					<form action="#" method="post">
-						<h4>Your Name*</h4>
-						<input type="text" name="Name" placeholder="Name..." required="">
-						<h4>Your Email*</h4>
-						<input type="email" name="Email" placeholder="Email..." required="">
-						<h4>Your Phone Number*</h4>
-						<input type="text" name="Phone" placeholder="Phone..." required="">
-						<h4>Your Message*</h4>
-						<textarea placeholder="Message..." name="Message"></textarea>
-						<input type="submit" value="Send message">
+						<h4>Nombre:*</h4>
+						<input type="text" name="Name" placeholder="Nombre..." required="">
+						<h4>Correo electrónico:*</h4>
+						<input type="email" name="Email" placeholder="Correo..." required="">
+						<h4>Número telefónico:*</h4>
+						<input type="text" name="Phone" placeholder="Teléfono..." required="">
+						<h4>Déjanos tu mensaje:*</h4>
+						<textarea placeholder="Mensaje..." name="Message"></textarea>
+						<input type="submit" value="Enviar Mensaje">
 					</form>
 				</div>
 			</div>
@@ -98,12 +101,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Av. Texozómoc 258, Las Trancas, Azcapotzalco<br>México, Distrito Federal, C.P. 02450<br></li>
 					<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:telsistem@telsistem.mx">telsistem@telsistem.mx</a></li>
 					<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> (55) 2452 8668</li>
+					<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> (55) 2452 8669</li>
 				</ul>
 		</div>
 		<div class="col-md-6 footer-left-agileinfo">
 			<!-- map -->
 			<div class="w3l-map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.3138971693222!2d-99.1964013708355!3d19.487636563456128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d20284988d7081%3A0xe515634bc2f01555!2sAv+Tezozomoc+258%2C+Tezozomoc%2C+02459+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses!2smx!4v1539808856472" width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.3138971693222!2d-99.1964013708355!3d19.487636563456128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d20284988d7081%3A0xe515634bc2f01555!2sAv+Tezozomoc+258%2C+Tezozomoc%2C+02459+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses!2smx!4v1539808856472" width="300" height="343" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
 			<!-- map -->
 		</div>
@@ -120,5 +124,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- for bootstrap working -->
 	<script src="js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
+<!-- código HTMl botón subir (top)-->
+<a href="#" id="js_up" class="boton-subir">
+  <!-- link del icono http://fontawesome.io/icon/rocket/ -->
+  <i class="fa fa-location-arrow" aria-hidden="true"></i>
+</a>
+<!-- script para que funcione al 100% el botón ir arriba -->
+<script>
+//invocamos al objeto (window) y a su método (scroll), solo se ejecutara si el usuario hace scroll en la página
+$(window).scroll(function(){
+  if($(this).scrollTop() > 300){ //condición a cumplirse cuando el usuario aya bajado 301px a más.
+    $("#js_up").slideDown(300); //se muestra el botón en 300 mili segundos
+  }else{ // si no
+    $("#js_up").slideUp(300); //se oculta el botón en 300 mili segundos
+  }
+});
+
+//creamos una función accediendo a la etiqueta i en su evento click
+$("#js_up i").on('click', function (e) { 
+  e.preventDefault(); //evita que se ejecute el tag ancla (<a href="#">valor</a>).
+  $("body,html").animate({ // aplicamos la función animate a los tags body y html
+    scrollTop: 0 //al colocar el valor 0 a scrollTop me volverá a la parte inicial de la página
+  },700); //el valor 700 indica que lo ara en 700 mili segundos
+  return false; //rompe el bucle
+});
+</script>
 </body>
 </html>
