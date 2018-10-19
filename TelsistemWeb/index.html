@@ -3,6 +3,7 @@
 <html lang="es">
 <head>
 <title>TELSISTEM COMUNICACIONES MAM S.A. DE C.V. | Inicio</title>
+<link rel="shortcut icon" class="fa fa-globe"/>
 <!-- custom-theme -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -13,7 +14,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //custom-theme -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/myStyle.css" rel="stylesheet" type="text/css" media="all"
 <!-- js -->
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 <!-- //js -->
@@ -197,12 +197,84 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 <!-- //about -->
 	<div class="content">
-		<div class="container">
-			<div class="content-mid"><h2 class="w3l_head">Algunos de nuestros clientes.</h2>
-					<div class="clearfix"></div>
+	<br><h3 class="about-grid" align="center">Algunas marcas que manejamos</h3><br>
+		<div class="slider">
+			<div class="slide-track">
+				<div class="slide">
+					<img src="images/Marcas/1.png" height="60" width="200" alt="" />
+				</div>
+				<div class="slide">
+					<img src="images/Marcas/3.png" height="40" width="200" alt="" />
+				</div>
+				<div class="slide">
+					<img src="images/Marcas/4.png" height="50" width="200" alt="" />
+				</div>
+				<div class="slide">
+					<img src="images/Marcas/5.png" height="50" width="200" alt="" />
+				</div>
+				<div class="slide">
+					<img src="images/Marcas/6.svg" height="50" width="200" alt="" />
+				</div>
+				<div class="slide">
+					<img src="images/Marcas/7.png" height="50" width="200" alt="" />
+				</div>
+				<div class="slide">
+					<img src="images/Marcas/8.png" height="60" width="200" alt="" />
+				</div>
+				<div class="slide">
+					<img src="images/Marcas/9.png" height="70" width="200" alt="" />
+				</div>
+				<div class="slide">
+					<img src="images/Marcas/10.svg" height="50" width="200" alt="" />
+				</div>
+				<div class="slide">
+					<img src="images/Marcas/11.png" height="40" width="200" alt="" />
+				</div>
+				<div class="slide">
+					<img src="images/Marcas/12.png" height="50" width="200" alt="" />
+				</div>
 			</div>
+			<div class="clearfix"></div>
 		</div>
-	</div>
+		<br><h3 class="about-grid" align="center">Algunos de nuestros clientes</h3><br>
+		<div class="slider">
+			<div class="slide-track">
+				<div class="slide">
+					<img src="images/Clientes/1.png" height="90" width="200" alt="" />
+				</div>
+				<div class="slide">
+					<img src="images/Clientes/2.png" height="90" width="200" alt="" />
+				</div>
+				<div class="slide">
+					<img src="images/Clientes/3.png" height="90" width="140" alt="" />
+				</div>
+				<div class="slide">
+					<img src="images/Clientes/4.png" height="100" width="150" alt="" />
+				</div>
+				<div class="slide">
+					<img src="images/Clientes/5.png" height="60" width="200" alt="" />
+				</div>
+				<div class="slide">
+					<img src="images/Clientes/6.png" height="90" width="200" alt="" />
+				</div>
+				<div class="slide">
+					<img src="images/Clientes/7.png" height="90" width="200" alt="" />
+				</div>
+				<div class="slide">
+					<img src="images/Clientes/8.png" height="90" width="200" alt="" />
+				</div>
+				<div class="slide">
+					<img src="images/Clientes/9.png" height="90" width="200" alt="" />
+				</div>
+				<div class="slide">
+					<img src="images/Clientes/1.png" height="90" width="200" alt="" />
+				</div>
+				<div class="slide">
+					<img src="images/Clientes/2.png" height="90" width="200" alt="" />
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
 <!-- footer -->
 	<div class="footer">
 		<div class="col-md-6 footer-left-agileits">
@@ -231,6 +303,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="clearfix"> </div>
 		</div>
 	</div>
+</div>
 <!-- for bootstrap working -->
 	<script src="js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
@@ -258,32 +331,5 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   		return false; //rompe el bucle
 	});
 </script>
-<script>
-	var timer = 4000;
-	var i = 0;
-	var max = $('#c > li').length;
-	$("#c > li").eq(i).addClass('active').css('left','0');
-	$("#c > li").eq(i + 1).addClass('active').css('left','25%');
-	$("#c > li").eq(i + 2).addClass('active').css('left','50%');
-	$("#c > li").eq(i + 3).addClass('active').css('left','75%');
-	setInterval(function(){ 
-		$("#c > li").removeClass('active');
-		$("#c > li").eq(i).css('transition-delay','0.25s');
-		$("#c > li").eq(i + 1).css('transition-delay','0.5s');
-		$("#c > li").eq(i + 2).css('transition-delay','0.75s');
-		$("#c > li").eq(i + 3).css('transition-delay','1s');
-		if (i < max-4) {
-			i = i+4; 
-		}
-		else { 
-			i = 0; 
-		}  
-		$("#c > li").eq(i).css('left','0').addClass('active').css('transition-delay','1.25s');
-		$("#c > li").eq(i + 1).css('left','25%').addClass('active').css('transition-delay','1.5s');
-		$("#c > li").eq(i + 2).css('left','50%').addClass('active').css('transition-delay','1.75s');
-		$("#c > li").eq(i + 3).css('left','75%').addClass('active').css('transition-delay','2s');
-	}, timer);	
-</script>
-
 </body>
 </html>
