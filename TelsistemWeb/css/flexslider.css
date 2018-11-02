@@ -179,8 +179,8 @@ html[xmlns] .slides {display: block;}
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(calc(-250px * 7));
-            transform: translateX(calc(-250px * 7));
+    -webkit-transform: translateX(calc(-250px * 12));
+            transform: translateX(calc(-250px * 12));
   }
 }
 
@@ -190,8 +190,8 @@ html[xmlns] .slides {display: block;}
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(calc(-250px * 7));
-            transform: translateX(calc(-250px * 7));
+    -webkit-transform: translateX(calc(-250px * 12));
+            transform: translateX(calc(-250px * 12));
   }
 }
 .slider {
@@ -200,7 +200,7 @@ html[xmlns] .slides {display: block;}
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 960px;
+  width: 1000px;
 }
 .slider::before, .slider::after {
   background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
@@ -221,10 +221,10 @@ html[xmlns] .slides {display: block;}
   top: 0;
 }
 .slider .slide-track {
-  -webkit-animation: scroll 60s linear infinite;
-          animation: scroll 60s linear infinite;
+  -webkit-animation: scroll 70s linear infinite;
+          animation: scroll 70s linear infinite;
   display: flex;
-  width: calc(250px * 14);
+  width: calc(250px * 15);
 }
 .slider .slide {
   height: 100px;

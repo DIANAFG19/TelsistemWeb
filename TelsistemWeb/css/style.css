@@ -34,16 +34,16 @@ input[type="submit"],input[type="reset"],a,.agileinfo_services_grid1_pos,.agilei
 }
 /*-- banner --*/
 .banner{
-	background:url(../images/banner.png) no-repeat 0px 0px;
+	background:url(../images/banner3.png) no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
 	-ms-background-size:cover;
-	min-height:750px;
+	min-height:700px;
 }
 .banner1{
-	background:url(../images/banner.png) no-repeat 0px 0px;
+	background:url(../images/banner3.png) no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
