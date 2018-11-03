@@ -148,7 +148,7 @@ html[xmlns] .slides {display: block;}
 }
 @media screen and (max-width: 480px) {
 	section.slider {
-		padding-top: 0%;
+		padding-top: 1%;
 	}
 	.flexslider {
 		padding:0;
@@ -179,8 +179,8 @@ html[xmlns] .slides {display: block;}
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(calc(-250px * 12));
-            transform: translateX(calc(-250px * 12));
+    -webkit-transform: translateX(calc(-250px * 9.35));
+            transform: translateX(calc(-250px * 9.35));
   }
 }
 
@@ -190,24 +190,28 @@ html[xmlns] .slides {display: block;}
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(calc(-250px * 12));
-            transform: translateX(calc(-250px * 12));
+    -webkit-transform: translateX(calc(-250px * 9.35));
+            transform: translateX(calc(-250px * 9.35));
   }
 }
 .slider {
-  box-shadow: 0 10px 50px -5px rgba(0, 0, 0, 0.125);
-  height: 100px;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  width: 1000px;
+	box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.0);
+	height: 100px;
+	margin-top: auto;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+	overflow: hidden;
+	position: relative;
+	width: 1000px;
+	align-items: center;
 }
 .slider::before, .slider::after {
   background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
-  height: 100px;
+  height: 75px;
   position: absolute;
-  width: 200px;
+  width: 150px;
   z-index: 2;
 }
 .slider::after {
@@ -221,12 +225,19 @@ html[xmlns] .slides {display: block;}
   top: 0;
 }
 .slider .slide-track {
-  -webkit-animation: scroll 70s linear infinite;
-          animation: scroll 70s linear infinite;
-  display: flex;
-  width: calc(250px * 15);
+	-webkit-animation: scroll 60s linear infinite;
+	animation: scroll 60s linear infinite;
+	display: flex;
+
+
+
+  width: calc(250px * 20);
+	text-align: left;
+	font-size: 100%;
 }
 .slider .slide {
-  height: 100px;
-  width: 250px;
+	height: 75px;
+	width: 130px;
+	align-content: center;
+	vertical-align: middle;
 }
